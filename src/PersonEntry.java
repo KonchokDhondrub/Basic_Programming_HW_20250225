@@ -9,6 +9,14 @@ class PersonEntry {
         this.duplicates = duplicates;
     }
 
+    public Person getPerson() {
+        return person;
+    }
+
+    public int getDuplicates() {
+        return duplicates;
+    }
+
     @Override
     public String toString() {
         return String.format("PersonEntry {Person(\"%s\", %d), %d}", person.getName(), person.getAge(), duplicates);

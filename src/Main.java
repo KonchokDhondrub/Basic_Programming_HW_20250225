@@ -22,7 +22,7 @@ public class Main {
     }
 
     public static Set<PersonEntry> countPerson(List<Person> list) {
-        if (list == null || list.size() == 0) return new HashSet<>();
+        if (list == null || list.isEmpty()) return new HashSet<>();
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) == null) {
                 list.remove(i);

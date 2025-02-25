@@ -2,7 +2,7 @@ import java.util.Objects;
 
 class PersonEntry {
     private final Person person;
-    private int duplicates;
+    private final int duplicates;
 
     public PersonEntry(Person person, int duplicates) {
         this.person = person;

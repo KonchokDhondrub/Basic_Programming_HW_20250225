@@ -22,7 +22,9 @@ public class Main {
     }
 
     public static Set<PersonEntry> countPerson(List<Person> list) {
-        if (list == null || list.isEmpty()) return new HashSet<>();
+        Set<PersonEntry> result = new HashSet<>();
+
+        if (list == null || list.isEmpty()) return result;
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) == null) {
                 list.remove(i);
@@ -32,7 +34,6 @@ public class Main {
 //        list.removeIf(Objects::isNull);
 
         Set<Person> uniqueSet = new HashSet<>(list);
-        Set<PersonEntry> result = new HashSet<>();
 
         for (Person person : uniqueSet) {
             int count = 0;
